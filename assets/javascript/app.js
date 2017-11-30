@@ -156,7 +156,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
 
-var number = 30;
+var number = 100;
     //  Variable that will hold our interval ID when we execute
     //  the "run" function
     var intervalId;
@@ -174,7 +174,7 @@ var number = 30;
       //  Decrease number by one.
       number--;
       //  Show the number in the #show-number tag.
-      $("#show-number").html("<h1>" + number + "</h1>");
+      $("#show-number").html("<h2>" + number + "</h2>");
       //  Once number hits zero...
       if (number === 0) {
         //  ...run the stop function.

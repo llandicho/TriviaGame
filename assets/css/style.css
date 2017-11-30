@@ -1,0 +1,10 @@
+body {
+    background-image: url("../../assets/images/oddShape.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+        
+    background-attachment: fixed;
+    background-position: right; 
+}
+
