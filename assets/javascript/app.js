@@ -1,6 +1,4 @@
 
-
-
 var myQuestions = [
     {
         question: "What is 10/2?",
@@ -11,6 +9,7 @@ var myQuestions = [
         },
         correctAnswer: 'b'
     },
+
     {
         question: "What is 30/3?",
         answers: {
@@ -19,7 +18,35 @@ var myQuestions = [
             c: '10'
         },
         correctAnswer: 'c'
-    }
+    },
+
+    {
+        question: "Which of the following is NOT a Principle of Design?",
+        answers: {
+            A: 'Emphasis',
+            B: 'Pattern',
+            C: 'Proportion',
+            D: 'Balance',
+            E: 'Texture'
+        },
+        correctAnswer: 'e'
+    },
+
+    {
+        question: "What do you call the art of selecting the proper typeface or Font?",
+        answers: {
+            A: 'Typeface',
+            B: 'Graphic Design',
+            C: 'Typography',
+            D: 'Lithography',
+            E: 'none of these'
+        },
+        correctAnswer: 'c'
+    },
+
+
+
+
 ];
 
 var quizContainer = document.getElementById('quiz');
@@ -109,7 +136,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
 
-var number = 5;
+var number = 10;
     //  Variable that will hold our interval ID when we execute
     //  the "run" function
     var intervalId;
