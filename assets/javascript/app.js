@@ -1,7 +1,6 @@
 
 var myQuestions = [
 
-
     {
         question: "1. Which of the following is NOT a Principle of Design?",
         answers: {
