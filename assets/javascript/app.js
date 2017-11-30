@@ -1,27 +1,9 @@
 
 var myQuestions = [
-    {
-        question: "What is 10/2?",
-        answers: {
-            a: '3',
-            b: '5',
-            c: '115'
-        },
-        correctAnswer: 'b'
-    },
+
 
     {
-        question: "What is 30/3?",
-        answers: {
-            a: '3',
-            b: '5',
-            c: '10'
-        },
-        correctAnswer: 'c'
-    },
-
-    {
-        question: "Which of the following is NOT a Principle of Design?",
+        question: "1. Which of the following is NOT a Principle of Design?",
         answers: {
             A: 'Emphasis',
             B: 'Pattern',
@@ -29,11 +11,11 @@ var myQuestions = [
             D: 'Balance',
             E: 'Texture'
         },
-        correctAnswer: 'e'
+        correctAnswer: 'E'
     },
 
     {
-        question: "What do you call the art of selecting the proper typeface or Font?",
+        question: "2. What do you call the art of selecting the proper typeface or Font?",
         answers: {
             A: 'Typeface',
             B: 'Graphic Design',
@@ -41,10 +23,45 @@ var myQuestions = [
             D: 'Lithography',
             E: 'none of these'
         },
-        correctAnswer: 'c'
+        correctAnswer: 'C'
+    },
+
+    {
+        question: "3. If you want to design a logo or create original drawings, this program will be the best option to create your vector images.",
+        answers: {
+            A: 'llustrator',
+            B: 'Photoshop',
+            C: 'InDesign',
+            D: 'Microsoft Word',
+            E: 'Google Drive'
+        },
+        correctAnswer: 'A'
     },
 
 
+    {
+        question: "4. An example of an Intermediate or Tertiary color is:",
+        answers: {
+            A: 'Blue- Green',
+            B: 'Red',
+            C: 'Light Blue',
+            D: 'Orange',
+            E: 'Purple'
+        },
+        correctAnswer: 'A'
+    },
+
+    {
+        question: "5. What element of art is a point moving in space?",
+        answers: {
+            A: 'Form',
+            B: 'Value',
+            C: 'Texture',
+            D: 'Line',
+            E: 'Shape'
+        },
+        correctAnswer: 'D'
+    },
 
 
 ];
@@ -86,6 +103,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 '<div class="question">' + questions[i].question + '</div>'
                 + '<div class="answers">' + answers.join('') + '</div>'
             );
+
         }
 
         // finally combine our output list into one string of html and put it on the page
