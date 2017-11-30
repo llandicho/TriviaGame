@@ -109,7 +109,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         }
 
         // finally combine our output list into one string of html and put it on the page
-        quizContainer.innerHTML = output.join(' <br> <br>');
+        quizContainer.innerHTML = output.join('<br> <br>');
     }
 
 
