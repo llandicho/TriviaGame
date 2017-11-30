@@ -94,8 +94,10 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                         + '<input type="radio" name="question'+i+'" value="'+letter+'">'
                         + letter + ': '
                         + questions[i].answers[letter]
-                    + '</label>'
+                        + 
+                    '</label>'
                 );
+
             }
 
             // add this question and its answers to the output
@@ -107,7 +109,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         }
 
         // finally combine our output list into one string of html and put it on the page
-        quizContainer.innerHTML = output.join('');
+        quizContainer.innerHTML = output.join(' <br> <br>');
     }
 
 
@@ -132,7 +134,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 numCorrect++;
                 
                 // color the answers green
-                answerContainers[i].style.color = 'lightgreen';
+                answerContainers[i].style.color = 'green';
             }
             // if answer is wrong or blank
             else{
@@ -154,7 +156,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
 
-var number = 10;
+var number = 30;
     //  Variable that will hold our interval ID when we execute
     //  the "run" function
     var intervalId;
@@ -172,7 +174,7 @@ var number = 10;
       //  Decrease number by one.
       number--;
       //  Show the number in the #show-number tag.
-      $("#show-number").html("<h2>" + number + "</h2>");
+      $("#show-number").html("<h1>" + number + "</h1>");
       //  Once number hits zero...
       if (number === 0) {
         //  ...run the stop function.
